@@ -1,0 +1,40 @@
+@media  (max-width: 768px){
+  
+    #overview p {
+     
+        text-align: justify;
+        transform: translatex(0%);
+     
+    }
+
+    #price h2 {
+        transform: translateX(-4%);
+ 
+    }
+
+    #price h2::after {
+
+        width: 10%;
+   
+        left: 324px;
+    }
+    footer::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        background-color: white;
+        height: 1px;
+        top: 78%;
+    }
+    .footer-bottom ul {
+        text-align: center;
+        margin-top: 21px;
+    }
+    .footer-bottom h5 {
+        font-size: 25px;
+        text-align: center;
+        margin-top: 27px;
+    }
+
+
+}

@@ -1,0 +1,398 @@
+/* ************************
+            glbal css
+************************ */
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+:root{
+    --primary:#ea0d60;
+    -popins:'Poppins', sans-serif;
+    --lato:'Lato', sans-serif;
+--monsarat:'Montserrat', sans-serif;
+
+}
+html,body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+ul {
+    padding-left: 0px;
+}
+ul li{
+    list-style-type: none;
+  
+}
+/* ************************
+    header  css
+************************ */
+header{
+    position: absolute;
+    padding: 8px 0px;
+    width: 100%;
+}
+header .nav-link{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-left: 10px;
+    color: white;
+    position: relative;
+}
+header .nav-link::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: var(--primary);
+    bottom:-1px;
+    left: 0px;
+    transition: all 0.5s linear;
+}
+header .nav-link:hover::after{
+    width: 100%;
+}
+header .nav-link:hover{
+    color: #ea0d60;
+    
+}
+
+
+/* ************************
+          banner  css
+************************ */
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   display: flex;
+background-position: center;
+   align-items: center;
+   text-align: center;
+}
+
+.banner h4{
+    font-family: var(--lato);
+    color: white;
+    font-size: 59px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.banner h3{
+    font-weight: bold;
+    color: white;
+    font-size: 55px;
+    margin-top: -24px;
+    text-transform: uppercase;
+}
+.banner a{
+  margin-top: 35px;
+  display: inline-block;
+    background-color: var(--primary);
+    color: white;
+    text-transform: capitalize;
+    padding: 14px 37px;
+    border-radius: 31px;
+    font-size: 20px;
+transition: all 0.3s linear;
+}
+.banner a:hover{
+    background-color: transparent;
+    border: 1px solid var(--primary);
+}
+
+
+
+/* ************************
+          overview css
+************************ */
+
+#overview{
+width: 100%;
+padding: 120px 0px;
+background-image: url(../img/banner02.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+
+}
+
+#overview p{
+    font-family: var(--lato);
+ text-align: justify;
+ transform: translatex(30%);
+color: #000;
+}
+#overview h3{
+    transform: translatex(30%);
+    font-weight: 400;
+    font-size: 45px;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#overview h3::after{
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 3px;
+    background-color: var(--primary);
+    bottom: 8px;
+    left: 213px;
+}
+
+
+/* ************************
+        offer css
+************************ */
+
+#offer{
+    width: 100%;
+padding: 90px 0px;
+    background-image: url(../img/banner01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   display: flex;
+background-position:right center;
+   align-items: center;
+   text-align: center;
+}
+
+#offer h4{
+    font-family: var(--lato);
+    color: white;
+    font-size: 50px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+#offer h3{
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+    margin-top: -20px;
+    text-transform: uppercase;
+}
+#offer a{
+  margin-top: 20px;
+  display: inline-block;
+    background-color: var(--primary);
+    color: white;
+    text-transform: capitalize;
+    padding: 14px 37px;
+    border-radius: 31px;
+    font-size: 20px;
+transition: all 0.3s linear;
+}
+#offer a:hover{
+    background-color: transparent;
+    border: 1px solid var(--primary);
+}
+
+/* ********* *
+        section 3 css
+*******************/
+.sec-3{
+    width: 100%;
+        height: 70vh;
+    background-image: url(../img/banner05.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center center;
+}
+/* ******************
+           details  css
+**********************/
+#details{
+width: 100%;
+
+    padding: 70px 0px;
+}
+
+#details h3{
+    transform: translatex(35%);
+    font-weight: 400;
+    font-size: 45px;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 20px;
+    position: relative;
+}
+  
+#details h3::after{
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 3px;
+    background-color: var(--primary);
+    bottom: 8px;
+    left: 160px;
+}
+
+#details p{
+    transform: translatex(35%);
+    font-family: var(--lato);
+ text-align: justify;
+font-weight: 500;
+color: #000;
+line-height: 30px;
+
+}
+#details img{
+    padding: 50px 0px;
+}
+
+/* ******************
+        price  css
+**********************/
+
+#price{
+    width: 100%;
+padding: 90px 0px;
+    background-image: url(../img/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   display: flex;
+background-position: center;
+   align-items: center;
+   text-align: center;
+}
+#price h2{
+transform: translateX(-17%);
+font-weight: 200;
+    font-size: 45px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    position: relative;
+}
+  
+#price h2::after{
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 3px;
+    background-color: var(--primary);
+    bottom: 8px;
+    left: 713px;
+}
+
+#price h4{
+    font-family: var(--lato);
+    color: white;
+    font-size: 59px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+#price h3{
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+    margin-top: -21px;
+    text-transform: uppercase;
+}
+#price a{
+ 
+  display: inline-block;
+    background-color: var(--primary);
+    color: white;
+    text-transform: capitalize;
+    padding: 14px 37px;
+    border-radius: 31px;
+    font-size: 20px;
+transition: all 0.3s linear;
+}
+#price a:hover{
+    background-color: transparent;
+    border: 1px solid var(--primary);
+}
+#price span{
+  color: #b50a49b4;
+  font-size: 90px;
+  padding: 20px 0px;
+}
+/* **************
+     footer css
+********************/
+footer{
+    width: 100%;
+    background-color: #000;
+    color: white;
+    position: relative;
+}
+
+footer h3{
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+footer ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: capitalize;
+    line-height: 34px;
+}
+
+footer ul li a:hover{
+    color: var(--primary);
+}
+
+.footer-top{
+    padding: 70px 0px;
+}
+.footer-top p span{
+    color: var(--primary);
+    margin: 0px 5px;
+}
+
+
+
+.footer-bottom{
+    padding: 15px 0px;
+   
+}
+footer::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    background-color: white;
+    height: 1px;
+    top: 78%;
+}
+
+
+.footer-bottom h5{
+    font-size: 25px;
+}
+.footer-bottom h5 span{
+    color: var(--primary);
+}
+
+
+
+.footer-bottom ul {
+    text-align: right;
+}
+.footer-bottom ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.footer-bottom ul li i{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 100%;
+    border: 1px solid white;
+    font-size: 20px;
+}
+
+.footer-bottom ul li i:hover{
+    background-color: var(--primary);
+}
